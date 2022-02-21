@@ -2,7 +2,7 @@ const ip = document.querySelector('input[type=text]')
 const btn = document.getElementsByTagName('button')[0]
 const todo = document.querySelector('.content ul')
 
-todos = ['code first', 'hi']
+todos = ['write three emails']
 function show(){
     todo.innerHTML = todos.map( (todo, index)=>{
         return `<li data-index = ${index}>
