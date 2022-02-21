@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shizuru', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+body{
+    background-image: linear-gradient(to right top, rgb(120, 219, 255), transparent);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#container{
+    background-color: black;
+    width: 25rem;
+    /* height: 31.25rem; */
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+}
+.content{
+    margin: 1.25rem 0;
+    border-top: 0.175rem solid gray;
+}
+.content ul li{
+    list-style-type: none;
+    position: relative;
+    text-align: start;
+    padding: 0.625rem 1.25rem;
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 0.2rem;
+    margin-top: 0.625rem;
+    word-wrap: break-word;
+}
+.line-through{
+    text-decoration: line-through;
+}
+
+.content ul li span{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0.625rem;
+    top: 3px;
+}
+.content ul li span::before{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    cursor: pointer;
+}
+.submit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+input, button{
+    outline: none;
+    border: none;
+    height: 2.75rem;
+    padding: 0.625rem 0;
+}
+input{
+    width: 20rem;
+    padding-left: 0.625rem;
+    font-size: 1.25rem;
+}
+button{
+    width: 3rem;
+    padding: unset;
+    cursor: pointer;
+}
